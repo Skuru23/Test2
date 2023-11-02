@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Test2</string>
+    <string name="welcome_string">Welcome to </string>
+    <string name="usename_text">Usename</string>
+    <string name="password_text">Password</string>
+    <string name="login_text">Login</string>
+    <string name="register_text">Create new account</string>
 </resources>
