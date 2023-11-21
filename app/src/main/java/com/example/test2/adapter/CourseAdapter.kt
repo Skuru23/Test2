@@ -1,5 +1,6 @@
 package com.example.test2.adapter
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,9 +10,10 @@ import com.example.test2.R
 import com.example.test2.data.CourseData
 import com.example.test2.model.Course
 
-class CourseAdapter(): RecyclerView.Adapter<CourseAdapter.CourseCardViewHolder>() {
+class CourseAdapter(
+): RecyclerView.Adapter<CourseAdapter.CourseCardViewHolder>() {
 
-    val courseSet:List<Course> = CourseData.courseList
+    val courseSet:List<Course> = CourseData.getDataSet()
     class CourseCardViewHolder(view :View) : RecyclerView.ViewHolder(view){
         val courseName:TextView = view.findViewById(R.id.course_card_text)
 
