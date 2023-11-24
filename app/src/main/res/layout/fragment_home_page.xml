@@ -3,9 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:layout_margin="8dp"
+    android:paddingBottom="60dp"
     tools:context=".HomePage">
 
     <!-- TODO: Update blank fragment layout -->
@@ -19,21 +19,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:spanCount="2" />
-
-    <Button
-        android:id="@+id/login_nav_but"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/login_text"
-        app:layout_constraintEnd_toEndOf="@+id/course_list"
-        app:layout_constraintStart_toStartOf="@+id/course_list"
-        app:layout_constraintTop_toBottomOf="@+id/course_list" />
-
-    <TextView
-        android:id="@+id/test_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="@+id/login_nav_but"
-        app:layout_constraintTop_toBottomOf="@+id/login_nav_but"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

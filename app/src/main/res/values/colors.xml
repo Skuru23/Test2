@@ -2,4 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="card_color">#83FF98</color>
+
+    <color name="colorPrimary">#80CBC4</color> <!-- Tương tự như themes "Yotsuba" -->
+    <color name="colorPrimaryDark">#4F9A94</color> <!-- Tương tự như themes "Yotsuba" -->
+    <color name="colorAccent">#FF4081</color>
+    <color name="textColorPrimary">#212121</color>
+    <color name="colorBackground">#FFFFFF</color>
 </resources>
