@@ -31,7 +31,7 @@ class LoginFragment : Fragment() {
             val username:String = binding.usenameEditText.text.toString()
             val password:String = binding.passwordEditText.text.toString()
             if(controller.loginHandler(username, password)){
-                val action = LoginFragmentDirections.actionLoginFragmentToProfile()
+                val action = LoginFragmentDirections.actionLoginFragmentToFragment3()
                 view.findNavController().navigate(action)
             }
         }

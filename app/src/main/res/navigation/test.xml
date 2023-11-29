@@ -18,17 +18,5 @@
         android:id="@+id/fragment3"
         android:name="com.example.test2.Profile"
         android:label="fragment_fragment3"
-        tools:layout="@layout/fragment_profile" >
-        <action
-            android:id="@+id/action_fragment3_to_loginFragment"
-            app:destination="@id/loginFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/loginFragment"
-        android:name="com.example.test2.LoginFragment"
-        android:label="LoginFragment" >
-        <action
-            android:id="@+id/action_loginFragment_to_fragment3"
-            app:destination="@id/fragment3" />
-    </fragment>
+        tools:layout="@layout/fragment_profile" />
 </navigation>

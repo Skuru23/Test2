@@ -8,7 +8,6 @@ import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.test2.adapter.CourseAdapter
 import com.example.test2.databinding.FragmentHomePageBinding
@@ -35,8 +34,6 @@ class HomePage : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         courseList = binding.courseList
         courseList.adapter = CourseAdapter()
-//        BottomNavController().navControl(view.findNavController(), view)
-
     }
 
     @Deprecated("Deprecated in Java", ReplaceWith("inflater.inflate(R.menu.home_page_menu, menu)"))

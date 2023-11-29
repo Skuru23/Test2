@@ -45,7 +45,7 @@ class Profile : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val loginBut:Button = view.findViewById(R.id.login_nav_but)
         loginBut.setOnClickListener{
-            val action = ProfileDirections.actionProfileToLoginFragment()
+            val action = ProfileDirections.actionFragment3ToLoginFragment();
             view.findNavController().navigate(action)
         }
     }
