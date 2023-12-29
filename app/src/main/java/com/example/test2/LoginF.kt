@@ -8,12 +8,15 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.example.test2.controller.HomePageController
 import com.example.test2.databinding.FragmentLoginBinding
+import com.google.firebase.Firebase
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.auth
 
-class LoginFragment : Fragment() {
+class LoginF : Fragment() {
     private var _binding: FragmentLoginBinding? = null
     private val binding get() = _binding!!
     private val controller = HomePageController()
-
+    private lateinit var auth: FirebaseAuth
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -31,9 +34,14 @@ class LoginFragment : Fragment() {
             val username:String = binding.usenameEditText.text.toString()
             val password:String = binding.passwordEditText.text.toString()
             if(controller.loginHandler(username, password)){
-                val action = LoginFragmentDirections.actionLoginFragmentToFragment3()
+                val action = LoginFDirections.actionLoginFragmentToFragment3()
                 view.findNavController().navigate(action)
             }
         }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        auth = Firebase.auth
     }
 }

@@ -7,8 +7,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.findNavController
-import com.google.android.material.bottomnavigation.BottomNavigationView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -17,10 +15,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [Profile.newInstance] factory method to
+ * Use the [ProfileF.newInstance] factory method to
  * create an instance of this fragment.
  */
-class Profile : Fragment() {
+class ProfileF : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -45,7 +43,7 @@ class Profile : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val loginBut:Button = view.findViewById(R.id.login_nav_but)
         loginBut.setOnClickListener{
-            val action = ProfileDirections.actionFragment3ToLoginFragment();
+            val action = ProfileFDirections.actionFragment3ToLoginFragment()
             view.findNavController().navigate(action)
         }
     }
@@ -62,7 +60,7 @@ class Profile : Fragment() {
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            Profile().apply {
+            ProfileF().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

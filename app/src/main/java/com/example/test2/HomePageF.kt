@@ -13,7 +13,7 @@ import com.example.test2.adapter.CourseAdapter
 import com.example.test2.databinding.FragmentHomePageBinding
 
 
-class HomePage : Fragment() {
+class HomePageF : Fragment() {
 
     private var _binding: FragmentHomePageBinding? = null
     private val binding get() = _binding!!

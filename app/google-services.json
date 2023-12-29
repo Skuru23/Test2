@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "53723223819",
+    "project_id": "englishproncheck",
+    "storage_bucket": "englishproncheck.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53723223819:android:c8d88314677f360085b40e",
+        "android_client_info": {
+          "package_name": "com.example.test2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqtdky6nkQ74QvexoR5KK6k_KJdgkGTLU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

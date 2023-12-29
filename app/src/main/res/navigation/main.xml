@@ -6,17 +6,17 @@
     app:startDestination="@id/fragment1">
     <fragment
         android:id="@+id/fragment1"
-        android:name="com.example.test2.HomePage"
+        android:name="com.example.test2.HomePageF"
         android:label="fragment_fragment1"
         tools:layout="@layout/fragment_home_page" />
     <fragment
         android:id="@+id/fragment2"
-        android:name="com.example.test2.TestFragment"
+        android:name="com.example.test2.TestF"
         android:label="fragment_fragment2"
         tools:layout="@layout/fragment_test" />
     <fragment
         android:id="@+id/fragment3"
-        android:name="com.example.test2.Profile"
+        android:name="com.example.test2.ProfileF"
         android:label="fragment_fragment3"
         tools:layout="@layout/fragment_profile" >
         <action
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.test2.LoginFragment"
+        android:name="com.example.test2.LoginF"
         android:label="LoginFragment" >
         <action
             android:id="@+id/action_loginFragment_to_fragment3"

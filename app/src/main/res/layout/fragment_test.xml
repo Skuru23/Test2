@@ -20,7 +20,7 @@
 
         <!-- EditText for entering search queries -->
         <EditText
-            android:id="@+id/editTestTextInput"
+            android:id="@+id/testTextEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Something to speech check..."
@@ -37,40 +37,35 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Search"
+        android:text="Check"
         app:layout_constraintTop_toBottomOf="@id/testTextInput"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView
-        android:id="@+id/textReco"
+        android:id="@+id/textRecog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        tools:text="Text Recognize Result"
-        app:layout_constraintTop_toBottomOf="@id/checkBtn"
+        android:layout_marginTop="50dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/textIPAResult"
+        tools:text="Text Recognize Result" />
 
     <TextView
         android:id="@+id/textIPAResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        tools:text="Text IPA Result"
-        app:layout_constraintTop_toBottomOf="@id/textReco"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-black"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/checkBtn"
+        tools:text="IPA result" />
 
-    <TextView
-        android:id="@+id/checkResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        tools:text="Check Result"
-        app:layout_constraintTop_toBottomOf="@id/textIPAResult"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
