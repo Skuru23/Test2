@@ -8,7 +8,11 @@
         android:id="@+id/fragment1"
         android:name="com.example.test2.HomePageF"
         android:label="fragment_fragment1"
-        tools:layout="@layout/fragment_home_page" />
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_fragment1_to_course2"
+            app:destination="@id/course2" />
+    </fragment>
     <fragment
         android:id="@+id/fragment2"
         android:name="com.example.test2.TestF"
@@ -30,5 +34,27 @@
         <action
             android:id="@+id/action_loginFragment_to_fragment3"
             app:destination="@id/fragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/check"
+        android:name="com.example.test2.Check"
+        android:label="Check" >
+        <argument
+            android:name="something_to_check"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_check_to_course2"
+            app:destination="@id/course2" />
+    </fragment>
+    <fragment
+        android:id="@+id/course2"
+        android:name="com.example.test2.Course"
+        android:label="Course" >
+        <action
+            android:id="@+id/action_course2_to_check"
+            app:destination="@id/check" />
+        <argument
+            android:name="course_name"
+            app:argType="string" />
     </fragment>
 </navigation>

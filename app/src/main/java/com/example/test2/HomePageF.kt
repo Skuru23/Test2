@@ -1,5 +1,6 @@
 package com.example.test2
 
+import CourseSQL
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.Menu
@@ -9,11 +10,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
+import com.example.test2.ViewModel.CourseItemViewModel
 import com.example.test2.adapter.CourseAdapter
 import com.example.test2.databinding.FragmentHomePageBinding
 
 
 class HomePageF : Fragment() {
+    private val viewModel = CourseItemViewModel()
 
     private var _binding: FragmentHomePageBinding? = null
     private val binding get() = _binding!!
@@ -33,7 +36,7 @@ class HomePageF : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         courseList = binding.courseList
-        courseList.adapter = CourseAdapter()
+        courseList.adapter = CourseAdapter(viewModel.courseSet)
     }
 
     @Deprecated("Deprecated in Java", ReplaceWith("inflater.inflate(R.menu.home_page_menu, menu)"))
